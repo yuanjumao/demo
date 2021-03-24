@@ -1,0 +1,7 @@
+apiVersion: apaas.envisioncn.com.apaas.envisioncn.com/v1beta1
+kind: Demo
+metadata:
+  name: demo-sample
+spec:
+  # Add fields here
+  foo: bar

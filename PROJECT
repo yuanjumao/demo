@@ -1,0 +1,17 @@
+domain: apaas.envisioncn.com
+layout: go.kubebuilder.io/v3
+projectName: demo
+repo: git.envisioncn.com/apaas/demo
+resources:
+- crdVersion: v1
+  group: apaas.envisioncn.com
+  kind: Demo
+  version: v1beta1
+- crdVersion: v1
+  group: apaas.envisioncn.com
+  kind: Demo
+  version: v1
+version: 3-alpha
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
