@@ -1,0 +1,51 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: demo.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Demo is the Schema for the demoes API
+      displayName: Demo
+      kind: Demo
+      name: demos.apaas.envisioncn.com.apaas.envisioncn.com
+      version: v1
+    - description: Demo is the Schema for the demoes API
+      displayName: Demo
+      kind: Demo
+      name: demos.apaas.envisioncn.com.apaas.envisioncn.com
+      version: v1beta1
+  description: An operator Demo without webhook
+  displayName: Demo
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - demo
+  - operator
+  links:
+  - name: Demo
+    url: https://demo.domain
+  maturity: alpha
+  provider:
+    name: Apaas
+    url: NONE
+  version: 0.0.0
